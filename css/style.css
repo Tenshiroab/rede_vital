@@ -419,7 +419,7 @@ footer {
 .slide-text {
   position: absolute;
   left: 50%;
-  top: 12vh; /* Ajuste para subir o texto */
+  top: 20vh; /* Ajuste para subir o texto */
   bottom: auto;
   transform: translateX(-50%);
   color: #fff;
@@ -465,7 +465,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .slide-text { bottom: 6vh; font-size: 1.1rem; padding: 0.7rem 1.1rem; }
+  .slide-text { bottom: 1vh; font-size: 1.1rem; padding: 5px; }
   .slider-btn { width: 38px; height: 38px; font-size: 1.3rem; }
   .slider-container { min-height: 180px; height: 32vh; }
 }
@@ -819,4 +819,5 @@ footer {
   width: 100%;
   height: 300px;
 }
+
 
