@@ -1,3 +1,4 @@
+
 /* =========================
    RESET & BASE
 ========================= */
@@ -352,6 +353,66 @@ footer {
   header nav.menu.active { display: flex; }
 }
 
+@media (max-width: 800px) {
+  header {
+    padding: 10px 10px;
+    gap: 8px;
+  }
+  .header-logo {
+    width: 38px;
+    height: 38px;
+  }
+  header h1 {
+    font-size: 1.15rem;
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  header nav.menu {
+    gap: 10px;
+  }
+  header nav.menu a {
+    font-size: 0.98rem;
+    padding: 7px 10px;
+  }
+}
+
+/* Responsividade para telas menores que 1280x800 (notebooks pequenos e tablets em paisagem) */
+@media (max-width: 1280px), (max-height: 800px) {
+  header {
+    padding: 10px 12px;
+    gap: 6px;
+  }
+  .header-logo {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    min-height: 34px;
+  }
+  header h1 {
+    font-size: 1rem;
+    max-width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  header nav.menu {
+    gap: 8px;
+  }
+  header nav.menu a {
+    font-size: 0.92rem;
+    padding: 6px 8px;
+  }
+  .menu-toggle {
+    width: 32px;
+    height: 30px;
+  }
+  .menu-toggle span {
+    height: 3px;
+  }
+}
+
 @media (max-width: 600px) {
   header { padding: 10px 8px; }
   .header-logo { width: 38px; height: 38px; }
@@ -426,7 +487,7 @@ footer {
   font-size: clamp(1.3rem, 4vw, 2.4rem);
   line-height: 1.2;
   text-align: center;
-  padding: 1.1rem 2.2rem;
+  padding: 5px;
   border-radius: 12px;
   background: rgba(30,30,40,0.38);
   text-shadow: 0 2px 12px rgba(0,0,0,0.38);
@@ -808,7 +869,8 @@ footer {
     padding: 12px 2px;
     font-size: 0.98rem;
   }
-   header{
+
+  header{
     flex-direction: column;
     gap: 12px;
     padding: 12px 16px;
@@ -824,6 +886,4 @@ footer {
   width: 100%;
   height: 300px;
 }
-
-
 
